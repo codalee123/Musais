@@ -1127,10 +1127,8 @@ body{
     align-items: center;
 }
 
-
 .info-img{
     height: 1.7em;
-    width: 10em;
     background-color: red;
     display: flex;
     justify-content: center;
