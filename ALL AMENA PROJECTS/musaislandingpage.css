@@ -784,7 +784,7 @@ body{
     .why-txt{
         margin: 0 auto;
         width: 65%;
-        height: 29em;
+        height: 26em;
         border: 1px solid gray;
         border-radius: 15px;
         text-align: center;
@@ -822,8 +822,7 @@ body{
     .rep-img, .custom-img{
         display: inline-block;
         padding: 1em;
-        width: 6em;
-        height: 6em;
+        height: 5em;
         background-color: white;
         border-radius: 20px;
         border: none;
@@ -832,7 +831,7 @@ body{
         display: none;
     }
     .rep-img img, .custom-img img{
-        width: 4em;
+        height: 100%;
     }
     
     .rep-txt h4, .custom-txt h4{
@@ -1132,7 +1131,7 @@ body{
 
 
 .info-img{
-    height: 1.7em;
+    height: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
