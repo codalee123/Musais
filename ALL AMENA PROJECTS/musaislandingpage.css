@@ -1127,8 +1127,10 @@ body{
     align-items: center;
 }
 
+
 .info-img{
     height: 1.7em;
+    width: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
