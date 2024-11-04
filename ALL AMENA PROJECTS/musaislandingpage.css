@@ -831,6 +831,9 @@ body{
     .blog-img ,.blog-txt p, .blog-txt h4{
         display: none;
     }
+    .rep-img img, .custom-img img{
+        width: 4em;
+    }
     
     .rep-txt h4, .custom-txt h4{
         font-size: 18px;
@@ -1130,7 +1133,6 @@ body{
 
 .info-img{
     height: 1.7em;
-    width: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1138,6 +1140,9 @@ body{
 .info-p{
     color: #ecf0f1;
     font-size: 22px;
+}
+.info-img img {
+    height: 100%;
 }
 .info-app{
     display: flex;
