@@ -697,7 +697,7 @@ body{
 
 
 /* MOBILE- DEVICE - SCREEN */
-@media(min-width: 320px) and (max-width:1028px){
+@media(min-width: 320px) and (max-width:764px){
     .header-txt{
         color: rgb(252, 244, 244) ;
         font-size: 25px;
