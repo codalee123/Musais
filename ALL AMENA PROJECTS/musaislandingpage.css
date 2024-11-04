@@ -9,7 +9,7 @@
     height: max-content;
 }
 body{
-    background: linear-gradient(270deg, #010a0a, #011b17, #081a1a);
+    /* background: linear-gradient(270deg, #010a0a, #011b17, #081a1a); */
     background-image: url(Amenaimages/background1.jpg);
     background-size: contain;
 }
@@ -25,8 +25,9 @@ body{
 .musais {
     position: relative;
     display: inline-block;
-    font-size: 4rem;
-    color: #ecf0f1; 
+    /* font-size: ; */
+    font-weight: 500;
+    color: #f0fcff; 
   }
   
   .musais::after {
@@ -46,11 +47,14 @@ body{
     color: white;
 }
 .p-txt img{
-    width:1.5rem;
+    width: 1.5em;
+
 }
 
 .p-txt{
     color: white;
+    height: 1em;
+    width: 6em;
 }
 
 .header-txt{
@@ -58,7 +62,7 @@ body{
     font-size: 77.33px;
     text-align: center;
     font-weight: 500;
-    margin: 1em 0;
+    margin: 0.5em 0;
     position: relative;
 }
 
@@ -102,19 +106,40 @@ body{
 }
 
 /* project section */
-.all-project{
+/* .all-project{
     display: flex;
     overflow: hidden;
     margin: 1em 0 ;
+} */
+
+.all-project{
+    margin: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%; 
+    scrollbar-width: thin;
+    padding: 4px;
+    scrollbar-color:#03382e #d4d0d0; 
+
 }
 
+.all-project::-webkit-scrollbar {
+    border-radius: 10px;
+  }
+  
+  .all-project::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    width: 20px;
+  }
 .project-1 img{
-    height: 35em;
+    height: 30em;
     width: 26em;
 }
 
 .project-2 img, .project-3 img, .project-4 img{
-    height: 35em;
+    height: 30em;
     width: 28em;
 }
 
@@ -139,8 +164,10 @@ body{
     border-radius: 50px;
     text-align: center;
     padding: 2em 0;
-    box-shadow: 0 4px 6px rgba(220, 220, 220, 0.6), 0 1px 3px rgba(220, 220, 220, 0.4);
-    background: linear-gradient(270deg, #0b1f1f, #03382e, #081a1a);
+    /* box-shadow: 0 4px 6px rgba(220, 220, 220, 0.6), 0 1px 3px rgba(220, 220, 220, 0.4); */
+    background: linear-gradient(290deg, #000000, #07362d, #050f0f,#000000);
+    /* background-image: url(Amenaimages/DOTS.png);
+    background-size: contain; */
 }
 
 
@@ -200,10 +227,13 @@ body{
 
     .ui-txt{
         margin: 0 auto;
-        width: 65%;
+        width:100%;
         border-radius: 50px;
         text-align: center;
         padding: 1.5em 0;
+        background-image: url(Amenaimages/DOTS.png);
+        background-size: contain;
+        
     }
 
     .ui-h2 {
@@ -229,7 +259,7 @@ body{
       }
 
     .ui-img img{
-        width: 100%;
+        width: 65%;
         cursor: pointer;
     }
 
@@ -297,7 +327,7 @@ body{
     width: 15rem;
     font-size: 19px;
     border: 1px solid whitesmoke;
-    background: linear-gradient(270deg, #0b1f1f, #03382e, #081a1a);
+    background: linear-gradient(270deg, #071414, #03382e, #040c0c);
     padding: 4.5rem 1rem;
     position: absolute;
     border-radius:25px;
@@ -439,6 +469,8 @@ body{
     margin-bottom: 2em;
     display: flex;
     flex-wrap: wrap;
+    background-image: url(Amenaimages/DOTS.png);
+    background-size: contain;
 
 }
 .plan-txt{
@@ -510,7 +542,7 @@ body{
     width: 20rem;
     font-size: 19px;
     border: 2px solid #858888;
-    padding: 4.5rem 1rem;
+    padding: 3rem 1rem;
     border-radius:25px;
     color:#ecf0f1;
     cursor: pointer;
@@ -562,9 +594,11 @@ body{
 }
 .price1, .price3{
     margin-top: 2.2em;
+    background: #010404;
 }
 .price2{
     height: 29.3em;
+    background-image: linear-gradient(#040f0f,#010404);
 }
 .price-btn2 button{
     border: none;
@@ -581,6 +615,8 @@ body{
 /* FOOTER SECTION */
 .information{
     padding: 2em 0;
+    background-image: url(Amenaimages/DOTS.png);
+    background-size: cover;
 }
 .info-txt{
     margin: 0 auto;
@@ -614,7 +650,7 @@ body{
 }
 
 /* media quary */
-@media (max-width: 1280px) {
+@media  (max-width: 1280px) {
        /* MACKBOOK- SCREEN */
        .why-txt{
         margin: 0 auto;
@@ -661,7 +697,7 @@ body{
 
 
 /* MOBILE- DEVICE - SCREEN */
-@media(min-width: 320px) and (max-width:764px){
+@media(min-width: 320px) and (max-width:1028px){
     .header-txt{
         color: rgb(252, 244, 244) ;
         font-size: 25px;
@@ -675,6 +711,15 @@ body{
         font-size: 12px;
         margin: 1em 0 0 0;
     }
+   .p-txt img{
+    height: 100%;
+
+}
+
+    .p-txt{
+    color: white;
+    height: 1em;
+}
     
     .header-txt p span{
         font-size: 12px;
@@ -739,11 +784,11 @@ body{
     .why-txt{
         margin: 0 auto;
         width: 65%;
-        height: 28em;
+        height: 29em;
         border: 1px solid gray;
         border-radius: 15px;
         text-align: center;
-        padding: 2em 0;
+        padding: 1em 0;
         box-shadow: 0 1px 3px rgba(220, 220, 220, 0.6), 0 1px 2px rgba(220, 220, 220, 0.4);
     }
     .why-h1 {
@@ -837,7 +882,7 @@ body{
 
     .expertise {
         padding: 0.5em 0 ;
-        height: 35em;
+        height: 26em;
     }
     
     .expert-txt{
@@ -872,7 +917,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 3em;
+        margin: 2em 1em 1em 0; 
     }
     
     .firstthreeBox, .secondthreebox{
@@ -935,8 +980,7 @@ body{
     
 
     .testimonial-txt{
-    margin: 0 auto;
-    width: 65%;
+    width: 100%;
     height: max-content;
     text-align: center;
     padding: 1em 0;
@@ -960,6 +1004,8 @@ body{
 
 .flex-container {
     gap: 0.5em;
+    margin-top: 0 1em;
+
   }
   
 .firstthree-flex, .secondthree-flex, .thirdthree-flex{
@@ -1024,7 +1070,7 @@ body{
     
 }
 .month{
-    width: 19em;
+    width: 18em;
     height: 3em;
 }
 .M{
@@ -1038,14 +1084,25 @@ body{
 .plan-h1 {
     position: relative;
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #ecf0f1;
-    margin: 0.9em 0;
+    margin: 0.8em 0;
 }
 
 .plan-h1::after {
     bottom: -8px; 
     height: 5px; 
+}
+.price1,.price3{
+    padding-top: 2em;
+    height: 24em;
+}
+.price3{
+    margin-top: 0.2em;
+}
+.price2{
+    height: 26em;
+    padding-top: 2em;
 }
 
 .firstthree-prices{
@@ -1065,15 +1122,23 @@ body{
     text-align: center;
     padding: 0.5em 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2em;
     align-items: center;
 }
-.info-img img{
-    width:1.5rem;
+
+
+.info-img{
+    height: 1.7em;
+    width: 10em;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .info-p{
     color: #ecf0f1;
-    font-size: 23px;
+    font-size: 22px;
 }
 .info-app{
     display: flex;
